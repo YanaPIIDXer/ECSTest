@@ -16,5 +16,5 @@ workflows:
             - aws-ecr/build-and-push-image
           aws-region: ${AWS_DEFAULT_REGION}
           family: "ECSTest"
-          cluster-name: "$ECSTest"
+          cluster-name: "ECSTest"
           container-image-name-updates: "container=ECSTest,tag=${CIRCLE_SHA1}"
