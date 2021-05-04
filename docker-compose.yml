@@ -1,0 +1,8 @@
+version: "3.0"
+services:
+    app:
+        build: ./App
+        volumes:
+            - ./App/html:/usr/share/nginx/html
+        ports:
+            - 80:80
